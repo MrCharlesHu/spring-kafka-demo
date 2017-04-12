@@ -1,0 +1,11 @@
+.idea
+*.iml
+*.swp
+logs
+*.log
+target
+.mvn
+mvn*
+.DS_Store**
+.classpath
+
