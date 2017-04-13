@@ -22,7 +22,7 @@ public class SpringKafkaTestApplicationTests {
 
     @Test
     public void testReceiver() throws Exception {
-        sender.sendMessage(Topics.IPTV_LOG, "Hello Spring Kafka!");
+        sender.sendMessage(Topics.DEFAULT, "Hello Spring Kafka!");
 
         receiver.getLatch().await(10000, TimeUnit.MILLISECONDS);
         assertThat(receiver.getLatch().getCount()).isEqualTo(0);
