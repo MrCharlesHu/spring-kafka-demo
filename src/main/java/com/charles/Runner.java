@@ -1,4 +1,4 @@
-package com.example;
+package com.charles;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
@@ -14,6 +14,7 @@ public class Runner implements CommandLineRunner, Ordered {
     public void run(String... args) throws Exception {
         for (int i = 0; i < 5; i++) {
             sender.sendMessage(Topics.DEFAULT, "Hello world, this is spring-kafka-demo");
+            Thread.sleep(5000);
         }
     }
 

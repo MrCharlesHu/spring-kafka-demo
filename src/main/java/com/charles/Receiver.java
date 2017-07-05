@@ -1,4 +1,4 @@
-package com.example;
+package com.charles;
 
 import org.apache.kafka.clients.consumer.ConsumerRecord;
 import org.slf4j.Logger;
